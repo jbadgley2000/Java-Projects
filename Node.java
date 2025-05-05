@@ -1,11 +1,11 @@
-public class Node {
-    char value;
-    Node next;
+public class Node<U> {
+    U value;
+    Node<U> next;
     public Node(){
-        value = 0;
+        value = null;
         next = null;
     }
-    public Node(char value){
+    public Node(U value){
         this.value = value;
         this.next = null;
     }
